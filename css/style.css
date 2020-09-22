@@ -277,10 +277,10 @@ small{
 
 @media screen and (max-width: 768px){
 h3{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 p{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 /* burgermenu */
 .burger-btn{
