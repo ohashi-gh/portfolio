@@ -126,6 +126,7 @@ body{
 }
 /* burgermenu */
 .noscroll{
+  position: fixed;
   overflow: hidden;
 }
 .burger-btn{
@@ -367,9 +368,6 @@ p{
 .headeritem{
   margin-right: 0;
   margin-bottom: 40px;
-}
-.noscroll{
-  overflow: hidden;
 }
 
 /* fv */
