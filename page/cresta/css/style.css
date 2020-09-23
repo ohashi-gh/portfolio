@@ -1,0 +1,436 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+ul, ol {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ vertical-align:baseline;
+ text-decoration: none;
+ color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+
+button {
+ line-height: 1.0;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ outline: none;
+ padding: 0;
+ appearance: none;
+}
+
+/* ↑リセットCSS */
+
+html{
+  font-size: 62.5%;
+}
+
+.body{
+  color: #141414;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  letter-spacing: 0.05rem;
+  font-family: 'Roboto', sans-serif,'Noto Sans JP', sans-serif;
+}
+
+h2{
+  font-size: 3.0rem;
+  font-weight: bold;
+  text-align: center;
+}
+h3{
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height:2;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+p{
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+img{
+  vertical-align: bottom;
+}
+
+/* header */
+
+.header{
+  background-color: #1B1310;
+  display: flex;
+  height: 72px;
+  align-items: center;
+  padding: 0 120px;
+  color: #ffffff;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+} 
+.headertitle a{
+  width: 130px;
+}
+.header ul{
+  display:flex;
+}
+.headeritem{
+  margin-right: 55px;
+}
+/* burgermenu */
+.noscroll{
+  overflow: hidden;
+}
+.burger-btn{
+  display: none;
+}
+
+/* page-discription */
+.top{
+  background-color: rgb(27 21 18);
+}
+.topimg{
+  background-image: url(../img/fv-bgi@2x.jpg);
+  background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.topword{
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 34px 42px;
+}
+.topword p{
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* title */
+.sectiontitle{
+  font-size: 3.6rem;
+  margin-bottom: 70px;
+}
+
+/* about */
+.container{
+  padding: 100px 10% 50px;
+  max-width: 1040px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container1word{
+  max-width: 480px;
+  margin: 10px 0px;
+}
+.container1 img{
+  max-width:100%;
+  margin: 10px 0px;
+}
+.container1word p{
+  font-weight: bold;
+  line-height: 1.8;
+}
+.container1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 100%;
+}
+.reverse{
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
+/* news */
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.newsbox{
+  max-width: 320px;
+  box-shadow: 0px 0px 6px gray;
+  margin-top: 10px;
+}
+.boxtxt{
+  padding: 33px 26px;
+}
+
+/* contactform */
+.form{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.input{
+  display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+}
+input,textarea{
+  padding: 10px;
+  line-height: 1;
+	font-size: 1.6rem;
+}
+textarea{
+	resize: none;
+	height: 171px;
+}
+label{
+	margin-bottom: 5px;
+}
+.send{
+  text-align: center;
+  margin-top: 50px;
+}
+.sendbtn{
+  width: 235px;
+  height: 59px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #1B1310;
+  box-shadow: 0px 0px 6px #1B1310;
+  border: none;
+}
+
+/* footer */
+.footer{
+  background-color: #1B1310;
+  color: #fff;
+  height: 79px;
+  text-align: center;
+}
+small{
+  font-size: 1.4rem;
+  padding-top: 30px;
+  display: block;
+}
+
+
+
+@media screen and (max-width: 768px){
+.headertitle a{
+  font-size: 2.6rem;
+}
+h3{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+a{
+  font-size: 1.6rem;
+}
+
+.container{
+  padding:100px 5% 50px;	
+}
+.topword p{
+  font-size: 3rem;
+}
+.container1 img{
+  text-align: center;
+}
+
+.newsbox{
+  margin: 50px 0 0;
+  justify-content: center;
+}
+.box{
+  flex-direction: column;
+}
+.boximg{
+  text-align: center;
+}
+.boxcenter{
+  display: inline-block;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+/* burgermenu */
+
+.header{
+  padding: 0 5%;
+}
+
+.burger-btn{
+  display: block;
+  width: 39px;
+  height:39px;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+}
+.bar{
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#fff;
+}
+.bar_top{
+  top: 10px;
+}
+.bar_mid{
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 10px;
+}
+.burger-btn.close .bar_top{
+  left: 0px;
+  transform: translate(-50%,10px) rotate(45deg);
+  transition: transform .3s;
+}
+.burger-btn.close .bar_mid{
+  left: 0px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.burger-btn.close .bar_bottom{
+  left: 0px;
+  transform: translate(-50%,-8px) rotate(-45deg);
+  transition: transform .3s;
+}
+.nav-wrapper{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.headernavi{
+  width: 100%;
+  height: 100%;
+  background-color: #1B1310;
+  z-index: 2;
+  transition:opacity .3s;
+  opacity: 0.95;
+}
+
+.headernavi .headerlist{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.headernavi .headeritem{
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+
+
+}
+
+@media screen and (max-width: 1200px){
+.container1{
+  justify-content: center;
+  max-width: 100%;
+
+}
+.container1word{
+  max-width: 100%;
+}
+
+
+
+}
