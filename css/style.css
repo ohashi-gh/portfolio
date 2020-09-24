@@ -235,7 +235,7 @@ h2::before {
 .skillcontainer{
   display: flex;
   justify-content: center;
-  margin: 5% 10% 5% 10%;
+  margin:0 10% 5% 10%;
 }
 .skillapp{
   width: 200px;
@@ -275,11 +275,19 @@ p.level{
   max-width: 300px;
   margin: 50px 20px;
   text-align: center;
+  padding: 0 0 30px 0;
+  box-shadow : 5px 2px 20px #666666 ;
+}
+.productbox:hover{
+  opacity: 0.8;
 }
 .productbox img{
   max-width: 300px;
   width: 100%;
   border: 1px solid;
+}
+.productword{
+  margin-top: 20px;
 }
 .productbox p{
   color: #888;
@@ -424,7 +432,7 @@ p{
   width: 40vw;
 }
 .innerword{
-  margin: 5vh;
+  margin: 30px 0;
 }
 
 
@@ -437,7 +445,7 @@ p{
   margin: 0 10% 5% 10%;
 }
 .skillapp{
-  margin: 5% 0;
+  margin-bottom: 10%;
   display: flex;
   width: 75vw;
   justify-content: center;
