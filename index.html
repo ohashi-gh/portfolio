@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;600&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id='body'>
 <!-- header -->
 <hedaer>
   <div class="headerinner" id="headerinner">
@@ -129,7 +129,7 @@
       <div class="sentence">
         <h3>CSS</h3>
         <p class="level">★★★★☆</p>
-        <p>3ヶ月間独学で学習。模写サイトやポートフォリオサイトを制作、楽しさを知る。
+        <p>3ヶ月間独学で学習。アニメーションやレスポンシブサイト制作可能
         </p>
       </div>
     </li>
@@ -169,14 +169,25 @@
   <div class="production skillcontainer">
     <h3>制作実績</h3>
     <ul class="product">
-      <li class="productbox">
-        <a href="page/cresta/index.html" target="_blank">
+      <li class="productbox" >
+        <div target="_blank" id="open">
           <img src="img/crestaportfolio.png">
           <div class="productword">
             <h4>Cresta.Design</h4>
             <p>Xdデザインカンプからの模写サイト</p>
-        </a>
+          </div>
         </div>
+        <!-- modalwindow -->
+        <div id="mask2" class="hidden"></div>
+        <section id="modal" class="hidden">
+          <a href="page/cresta/index.html">
+            <img src="img/crestaportfolio_long.png" alt="サイトへのリンク">
+          </a>
+          <h4>Adobe XDデザインカンプから模写サイトを作成</h4>
+          <div id="close">
+            <p>閉じる</p>
+          </div>
+        </section>
       </li>
     </ul>
   </div>

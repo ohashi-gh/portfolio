@@ -1,3 +1,5 @@
+'use strict';
+
 // バーガーメニュー表示
 $(".burger-btn").on("click",function(){
   $(".burger-btn").toggleClass("close");
@@ -49,3 +51,29 @@ document.addEventListener("click", e => {
     behavior: "smooth"
   });
 });
+
+
+// モーダルウィンドウ
+{
+  const open = document.getElementById('open');
+  const close = document.getElementById('close');
+  const mask2 = document.getElementById('mask2');
+  const modal = document.getElementById('modal');
+  const body = document.getElementById('body');
+
+  open.addEventListener('click' , () => {
+    modal.classList.remove('hidden');
+    mask2.classList.remove('hidden');
+    body.classList.add('noscroll');
+  });
+
+  close.addEventListener('click' , () => {
+    modal.classList.add('hidden');
+    mask2.classList.add('hidden');
+    document.body.classList.remove('noscroll');
+  });
+
+  mask2.addEventListener('click' , () => {
+    close.click();
+    });
+}

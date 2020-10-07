@@ -105,10 +105,11 @@ body{
 .headerlist1{
   display: flex;
 }
+
 .headeritem:hover{
   background: linear-gradient( 0deg, transparent, 40%, #a9a9a9);
   color: #fff;
-  animation: fadeIn 1s ;
+  animation: fadeIn .5s ;
 }
 .headerlist1 .headeritem a{
   border-left: solid 1px #ccc;
@@ -120,13 +121,13 @@ body{
   border-left: none;
 }
 
+/* fade設定 */
 @keyframes fadeIn { 
   0% {opacity: 0} 
   100% {opacity: 1} 
 }
 /* burgermenu */
 .noscroll{
-  position: fixed;
   overflow: hidden;
 }
 .burger-btn{
@@ -263,7 +264,7 @@ p.level{
 }
 .production h3{
   padding: 5px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ccc;
 }
 .product{
   display: flex;
@@ -272,25 +273,100 @@ p.level{
   align-items: flex-start;
 }
 .productbox{
-  max-width: 300px;
   margin: 50px 20px;
   text-align: center;
-  padding: 0 0 30px 0;
-  box-shadow : 5px 2px 20px #666666 ;
+  line-height: 1;
 }
-.productbox:hover{
-  opacity: 0.8;
-}
+
 .productbox img{
   max-width: 300px;
   width: 100%;
-  border: 1px solid;
+  border-bottom: 1px solid;
 }
 .productword{
-  margin-top: 20px;
+  padding: 25px 10px 30px;
+  line-height: 1.8;
 }
 .productbox p{
   color: #888;
+}
+/* modal window */
+#open #close{
+  cursor: pointer;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+#open{
+  box-shadow : 5px 2px 20px #666666 ;
+  transition-duration: .5s;
+}
+#open:hover{
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition-duration: .5s;
+
+}
+#mask2{
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation: 0.5s fadeIn;
+}
+#modal{
+  background: #fff;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#modal img{
+  border: none;
+  height: 60vh;
+  object-fit: contain;
+}
+#modal img:hover{
+  cursor: pointer;
+  border: 1px solid rgba(0, 60, 255, 0.9);
+  margin: -1px;
+}
+#modal h4{
+  margin: 30px 0;
+}
+#close p{
+  color: #303030;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  width: 100px;
+  margin: 0 auto;
+}
+#close p:hover{
+  background-color: #66666666;
+  color: #fff;
+  border: 1px solid none;
+  animation: fadeIn .5s;
+}
+#mask2.hidden{
+  display: none;
+}
+#modal.hidden{
+  display: none;
 }
 
 /* contact */
@@ -317,7 +393,20 @@ small{
   font-size: 1.2rem;
 }
 
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px){
+
+.noscroll{
+  position: fixed;
+  overflow: hidden;
+}
 h3{
   font-size: 1.6rem;
 }
