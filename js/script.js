@@ -14,10 +14,11 @@ if( $(window).width() < 768 ){
   });
 };
 
-// headerスクロール時表示
+// スクロール時表示
 var menuHeight = $(".headerinner").height();
 var startPos = 0;
 $(window).scroll(function(){
+  // headerスクロール時
   var currentPos = $(this).scrollTop();
   if (currentPos > startPos) {
     if($(window).scrollTop() >=  100) {
@@ -26,9 +27,21 @@ $(window).scroll(function(){
   } else {
     $(".headerinner").css("top", 0 + "px");
   }
-  // パララックス
-  
   startPos = currentPos;
+});
+
+// パララックス
+$(window).on('scroll', function(){
+
+  var scrollTop = $(window).scrollTop();
+  var bgPosition = scrollTop / 2; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
+  // 横1033px以上のみパララックス
+  var ww = window.innerWidth;
+  if(ww > 1033){
+    if(bgPosition){
+      $('#about').css('background-position', 'center top -'+ bgPosition + 'px');
+    }
+  }
 });
 
 // 参考url https://www.to-r.net/media/smooth_scrolling_2019/
@@ -96,7 +109,6 @@ document.addEventListener("click", e => {
     modal02.classList.add('hidden');
     mask02.classList.add('hidden');
     document.body.classList.remove('noscroll');
-    player.pauseVideo();
   });
   // 黒マスククリック
   mask02.addEventListener('click' , () => {

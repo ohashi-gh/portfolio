@@ -71,6 +71,7 @@ body{
   line-height: 1.8;
   letter-spacing: 0.03rem;
   font-family: 'Roboto', cursive, 'Noto Serif JP','ヒラギノ角ゴシック', 'メイリオ', sans-serif;
+  height: 100%;
 }
 
 /* header */
@@ -163,17 +164,17 @@ body{
 }
 
 /* about */
-/* 奇数枠背景色変更 */
-.container:nth-of-type(odd){
-  background-color: #f9f9f9;
-}
-/* 奇数枠タイトル背景色変更 */
-.container:nth-of-type(odd) h2 span{
-  background-color: #f9f9f9;
+#about{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/back01.jpg);
+  background-repeat: no-repeat;
+  background-size: 170%;
+  background-position: center top;
 }
 .title{
   text-align: left;
-  padding: 5% 20px;
+  padding: 10vh 20px;
   line-height: 1.4;
 }
 h2{
@@ -186,20 +187,19 @@ h2 span {
   position: relative;
   z-index: 2;
   display: inline-block;
-  padding: 0 5%;
-  background-color: #fff;
+  padding: 0 20px 0 5%;
   text-align: left;
 }
-h2::before {
+h2::after {
   position: absolute;
   top: 50%;
   z-index: 1;
   content: '';
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: calc(95% - 122px);
   height: 1px;
   background-color: #ccc;
-  background: linear-gradient(-90deg, transparent, #ccc 10%, #ccc 90%, transparent);
+  background: linear-gradient(to right, #ccc 60%, transparent);
 }
 .title p{
   padding: 0 5%;
@@ -210,7 +210,8 @@ h2::before {
   display: flex;
   justify-content: center;
   margin: 0 10%;
-  padding-bottom: 30px;
+  padding-bottom: 10vh;
+  align-items: center;
 }
 .contents img{
   width: 25%;
@@ -309,7 +310,6 @@ p.level{
   cursor: pointer;
   transform: scale(1.02);
   transition-duration: .5s;
-
 }
 #mask2{
   background: rgba(0, 0, 0, 0.8);
@@ -460,8 +460,16 @@ p.level{
 }
 
 /* contact */
+#contact{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/back02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .contact{
   padding: 0% 0% 5% 0%;
+  color: #f0f0f0;
 }
 .box{
   border: 1px solid #ccc;
@@ -601,6 +609,9 @@ p{
 }
 
 /* about */
+#about{
+  background-size: cover;
+}
 .contents{
   padding: 5vh 20px;
   flex-direction: column;
