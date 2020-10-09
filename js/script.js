@@ -26,6 +26,8 @@ $(window).scroll(function(){
   } else {
     $(".headerinner").css("top", 0 + "px");
   }
+  // パララックス
+  
   startPos = currentPos;
 });
 
@@ -60,6 +62,11 @@ document.addEventListener("click", e => {
   const mask2 = document.getElementById('mask2');
   const modal = document.getElementById('modal');
   const body = document.getElementById('body');
+  // mvモーダル
+  const open02 = document.getElementById('open02');
+  const close02 = document.getElementById('close02');
+  const mask02 = document.getElementById('mask02');
+  const modal02 = document.getElementById('modal02');
 
   open.addEventListener('click' , () => {
     modal.classList.remove('hidden');
@@ -76,4 +83,24 @@ document.addEventListener("click", e => {
   mask2.addEventListener('click' , () => {
     close.click();
     });
+
+  // mvモーダル
+  open02.addEventListener('click' , () => {
+    modal02.classList.remove('hidden');
+    mask02.classList.remove('hidden');
+    body.classList.add('noscroll');
+  });
+
+  // 閉じるクリック
+  close02.addEventListener('click' , () => {
+    modal02.classList.add('hidden');
+    mask02.classList.add('hidden');
+    document.body.classList.remove('noscroll');
+    player.pauseVideo();
+  });
+  // 黒マスククリック
+  mask02.addEventListener('click' , () => {
+    close02.click();
+    });
+
 }
