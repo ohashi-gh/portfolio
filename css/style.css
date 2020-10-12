@@ -171,6 +171,7 @@ body{
   background-repeat: no-repeat;
   background-size: 170%;
   background-position: center top;
+  padding-bottom: 10vh;
 }
 .title{
   text-align: left;
@@ -210,8 +211,8 @@ h2::after {
   display: flex;
   justify-content: center;
   margin: 0 10%;
-  padding-bottom: 10vh;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .contents img{
   width: 25%;
@@ -489,6 +490,13 @@ p.level{
 }
 small{
   font-size: 1.2rem;
+}
+
+/* スクロールフェードイン */
+.fadein {
+  opacity : 0;
+  transform: translateY(100px);
+  transition: all 1s;
 }
 
 
