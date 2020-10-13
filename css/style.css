@@ -212,13 +212,13 @@ h2::after {
   justify-content: center;
   margin: 0 10%;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .contents img{
   width: 25%;
   height: 25%;
   max-width: 300px;
-  margin: 50px 5% 50px 0;
+  margin: 50px 5% 50px 50px;
 }
 .innerword{
   margin: 50px;
@@ -497,6 +497,10 @@ small{
   opacity : 0;
   transform: translateY(100px);
   transition: all 1s;
+}
+/* スクロールフェードイン 遅れ*/
+.fadein.delay {
+  transition-delay: 250ms;
 }
 
 
