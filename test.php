@@ -1,4 +1,6 @@
-<!DOCTYPE HTML>
+<?php phpinfo(); ?>
+
+<!-- <!DOCTYPE HTML>
 <div class="test">
   <p><a href="anitv://live_broadcasts/247">test link<a></p>
 </div>
@@ -27,4 +29,4 @@ if ((strpos($ua, 'Android') !== false) && (strpos($ua, 'Mobile') !== false) || (
   <div class="sp">
     <p>pc</p>
   </div>
-<?php } ?>
+<?php } ?> -->
